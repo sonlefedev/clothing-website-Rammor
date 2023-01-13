@@ -1,0 +1,12 @@
+.default-padding-left_right {
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (max-width: 750px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.max-width {
+    max-width: 1200px;
+}

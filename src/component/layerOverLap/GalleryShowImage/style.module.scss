@@ -1,0 +1,21 @@
+.wrapper-gallery {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+
+    overflow-y: scroll;
+
+    .item-gallery {
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.bank-payment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    svg {
+        width: 38px;
+        height: 24px;
+    }
+}

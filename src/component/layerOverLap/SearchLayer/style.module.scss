@@ -1,0 +1,19 @@
+.search-layer {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.266);
+    .container {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
+        @media (max-width: 642px) {
+            padding: 0;
+        }
+        
+    }
+}

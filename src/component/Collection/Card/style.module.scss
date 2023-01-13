@@ -1,0 +1,35 @@
+.card {
+    cursor: pointer;
+    --gap-size: 10px;
+    display: block;
+    width: calc(100% / 4 - var(--gap-size) * 2);
+    @media (max-width: 990px) {
+        width: calc(100% / 2 - var(--gap-size));
+    }
+    .thumb,
+    .info {
+        width: 100%;
+    }
+    .thumb {
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        overflow: hidden;
+        img {
+            transition: all 0.2s linear;
+        }
+    }
+    .info {
+        h3 {
+            line-height: 1.4;
+            font-size: 13px;
+        }
+    }
+    &:hover {
+        h3 {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        img {
+            transform: scale(1.02);
+        }
+    }
+}

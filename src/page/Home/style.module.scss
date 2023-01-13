@@ -1,0 +1,10 @@
+.home-page {
+    margin-top: 86px;
+    @media (max-width: 1033px) {
+        margin-top: 131px;
+    }
+    @media (max-width: 830px) {
+        margin-top: 64px;
+    }
+    
+}

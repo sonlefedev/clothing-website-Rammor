@@ -1,0 +1,36 @@
+.wrapper-menu {
+    @media (max-width: 830px) {
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        flex-wrap: wrap;
+    }
+    li {
+        
+    }
+    a {
+        display: block;
+        &:hover span::after {
+            width: 100%;
+        }
+        span {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: -10%;
+                width: 0px;
+                height: 1px;
+                background-color: #000;
+                transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        }
+        padding: 12px;
+    } 
+}

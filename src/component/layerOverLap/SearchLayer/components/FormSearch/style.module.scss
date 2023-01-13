@@ -1,0 +1,59 @@
+.field {
+    @media (max-width: 642px) {
+        padding: 9px;
+    }
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    padding: 0 60px;
+    width: 522px;
+    max-width: 97vw;
+    label {
+        position: absolute;
+        font-size: 16px;
+        left: 12%;
+        transition: all 0.3s ease;
+        @media (max-width: 642px) {
+            left: 30px;
+        }
+        &.empty-search {
+            font-size: 11px;
+            transform: translateY(-13px);
+        }
+    }
+    input {
+        flex: 1;
+        padding: 20px 50px 10px 15px;
+        &:focus + label {
+            font-size: 11px;
+            transform: translateY(-13px);
+        }
+    }
+    .search {
+        position: absolute;
+        right: 17%;
+
+        @media (max-width: 642px) {
+            right: 58px;
+        }
+    }
+    .close {
+    }
+    .icon {
+        --size-svg: 17px;
+        svg {
+            width: var(--size-svg);
+            height: var(--size-svg);
+        }
+        cursor: pointer;
+        --size: 44px;
+        width: var(--size);
+        height: var(--size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,3 @@
+import CommonPropertiesBigComponent from "./CommonPropertiesBigComponent";
+
+export default CommonPropertiesBigComponent

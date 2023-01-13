@@ -1,0 +1,31 @@
+.btn-menu-mobile-wrapper {
+    display: none;
+    @media (max-width: 830px) {
+        display: flex;
+    }
+
+    --size: 44px;
+
+    width: var(--size);
+    height: var(--size);
+    &.open-menu {
+        > svg {
+            &:nth-child(1) {
+                display: none;
+            }
+            &:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+    > svg {
+        transition: transform .15s ease,opacity .15s ease;
+        display: block;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}

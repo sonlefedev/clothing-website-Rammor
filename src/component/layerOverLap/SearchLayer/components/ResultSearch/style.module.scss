@@ -1,0 +1,24 @@
+.search-res-wrapper {
+    --padding-field: 60px;
+    --size-btn-close: 44px;
+    --size-border: 1px;
+    position: absolute;
+    left: var(--padding-field);
+    background-color: #fff;
+    top: 100%;
+
+    &.no-data {
+        border: none;
+    }
+
+    @media (max-width: 642px) {
+        --padding-field: 9px;
+        // bottom: -14px;
+    }
+
+    width: calc(100% - (var(--padding-field) * 2 + var(--size-btn-close)));
+    max-width: calc(97vw - var(--size-btn-close));
+    border: var(--size-border) solid rgba(0, 0, 0, 0.08);
+    border-top-color: transparent;
+
+}
