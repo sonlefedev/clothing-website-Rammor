@@ -32,7 +32,7 @@ const Card = (props: Props) => {
 
     useEffect(() => {
         if (insideViewPort) {
-            setTimeout(() => setIsLoading(false), 500);
+            setTimeout(() => setIsLoading(false), 0);
         }
     }, [insideViewPort]);
 

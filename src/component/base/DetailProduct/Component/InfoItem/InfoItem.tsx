@@ -147,11 +147,15 @@ const InfoItem = ({ data, className, type, handleBtnShowMoreClick }: Props) => {
                             <p key={des.id}>{des.text}</p>
                         ))}
                     </div>
-                    <div className={cx("desc", "note")}>
-                        {data.description_notes?.map((des) => (
-                            <p key={des.id}>{des.text}</p>
-                        ))}
-                    </div>
+                    {data.description_notes ? (
+                        <div className={cx("desc", "note")}>
+                            {data.description_notes.map((des) => (
+                                <p key={des.id}>{des.text}</p>
+                            ))}
+                        </div>
+                    ) : (
+                        <></>
+                    )}
                     <div className={cx("accordion", toggleAccordion && "show")}>
                         <div
                             className={cx("summary")}
