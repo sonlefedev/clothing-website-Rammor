@@ -6,6 +6,13 @@ import classNames from "classnames/bind";
 import Result, { IDataResult } from "./Result/Result";
 import Loader from "./Loader";
 import { v4 } from "uuid";
+
+
+import WhiteDadHatSun_150x from "../../../../../static/img/fake-result-search/WhiteDadHatSun_150x.jpg"
+import WhiteDadHatPalmTree_150x from "../../../../../static/img/fake-result-search/WhiteDadHatPalmTree_150x.jpg"
+import classic_dad_hat_black_front_61ead753cc3a9_150x from "../../../../../static/img/fake-result-search/classic-dad-hat-black-front-61ead753cc3a9_150x.jpg"
+import classic_dad_hat_black_front_61e1ad43d7e00_150x from "../../../../../static/img/fake-result-search/classic-dad-hat-black-front-61e1ad43d7e00_150x.jpg"
+
 type Props = {};
 const cx = classNames.bind(style);
 
@@ -24,56 +31,28 @@ const ResultSearch = (props: Props) => {
                     {
                         id: v4(),
                         price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/WhiteDadHatSun_150x.jpg"),
+                        thumb: WhiteDadHatSun_150x,
                         title: `Sun Embroidery Dad Hat`,
                         link: "#",
                     },
                     {
                         id: v4(),
                         price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/WhiteDadHatPalmTree_150x.jpg"),
+                        thumb: WhiteDadHatPalmTree_150x,
                         title: `Palmtree Embroidery Dad Hat`,
                         link: "#",
                     },
                     {
                         id: v4(),
                         price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/classic-dad-hat-black-front-61ead753cc3a9_150x.jpg"),
+                        thumb: classic_dad_hat_black_front_61ead753cc3a9_150x,
                         title: `Sun Embroidery Dad Hat`,
                         link: "#",
                     },
                     {
                         id: v4(),
                         price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/classic-dad-hat-black-front-61e1ad43d7e00_150x.jpg"),
-                        title: `Palmtree Embroidery Dad Hat`,
-                        link: "#",
-                    },
-                    {
-                        id: v4(),
-                        price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/WhiteDadHatSun_150x.jpg"),
-                        title: `Sun Embroidery Dad Hat`,
-                        link: "#",
-                    },
-                    {
-                        id: v4(),
-                        price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/WhiteDadHatPalmTree_150x.jpg"),
-                        title: `Palmtree Embroidery Dad Hat`,
-                        link: "#",
-                    },
-                    {
-                        id: v4(),
-                        price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/classic-dad-hat-black-front-61ead753cc3a9_150x.jpg"),
-                        title: `Sun Embroidery Dad Hat`,
-                        link: "#",
-                    },
-                    {
-                        id: v4(),
-                        price: `€29,99 EUR`,
-                        thumb: require("../../../../../static/img/fake-result-search/classic-dad-hat-black-front-61e1ad43d7e00_150x.jpg"),
+                        thumb: classic_dad_hat_black_front_61e1ad43d7e00_150x,
                         title: `Palmtree Embroidery Dad Hat`,
                         link: "#",
                     },

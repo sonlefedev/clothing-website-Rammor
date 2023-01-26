@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import AppStore from "../../../app/Context/AppStore";
 import BtnMenuMobile from "./components/BtnMenuMobile";
 import CommonPropertiesBigComponent from "../../common/CommonPropertiesBigComponent";
+import logo from "../../../static/img/RAMMOR-LOGOSCHWARZ-84_100x.png"
 
 type Props = {};
 const cx = classNames.bind(style);
@@ -20,7 +21,7 @@ const Header = (props: Props) => {
             <BtnMenuMobile />
             <Link className={cx("link-home")} to={"/"}>
                 <img
-                    src={require("../../../static/img/RAMMOR-LOGOSCHWARZ-84_100x.png")}
+                    src={logo}
                     alt=""
                 />
             </Link>

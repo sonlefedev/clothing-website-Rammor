@@ -4,6 +4,7 @@ import classNames from "classnames/bind";
 import style from "./style.module.scss";
 import Button from "../../../../common/Button";
 import { useCallback, useState } from "react";
+import shopPay from "../../../../../static/img/shop-pay.jpg";
 
 type Props = {
     className?: string;
@@ -135,7 +136,7 @@ const InfoItem = ({ data, className, type, handleBtnShowMoreClick }: Props) => {
             <Button className={cx("btn-buy")}>
                 <span>Buy with </span>
                 <img
-                    src={require("../../../../../static/img/shop-pay.jpg")}
+                    src={shopPay}
                     alt=""
                 />
             </Button>
